@@ -354,7 +354,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         return {
-            tileCount: 180,
+            tileCount: 171,
             baseDelay: 220,
             stepDelay: 45,
             widthRatio: 0.75,
