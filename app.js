@@ -267,14 +267,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function generateBlessings(count) {
         const basePhrases = [
-            '愿你冬夜与光同眠',
+            '我是施高政',
             '愿你心底常留炭火',
             '愿你拥抱柔软时光',
             '愿你与好运撞个满怀',
             '愿你所念皆所愿',
             '愿你此刻自在闪耀',
             '愿你平安顺遂',
-            '愿你保有赤子心',
+            '来自施高政',
             '愿你笑容永远灿烂',
             '愿你被世界温柔以待',
             '愿你与热爱长相伴',
