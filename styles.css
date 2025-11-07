@@ -136,6 +136,7 @@ body {
     color: #f3f6ff;
     text-align: center;
     cursor: pointer;
+    transition: background 0.6s ease;
 }
 
 .heart-stage.flattened {
@@ -226,5 +227,66 @@ body {
     100% {
         background-position: 0% 50%;
         box-shadow: 0 15px 35px rgba(57, 73, 160, 0.55), inset 0 0 18px rgba(255, 255, 255, 0.28);
+    }
+}
+
+.heart-stage[data-layout-density="balanced"] {
+    padding: 4vh 5vw;
+}
+
+.heart-stage[data-layout-density="compact"] {
+    padding: 3vh 4vw;
+}
+
+@media (max-width: 720px) {
+    body {
+        align-items: flex-start;
+        padding-top: 4vh;
+    }
+
+    .heart-stage .heart-instruction {
+        font-size: 18px;
+    }
+
+    .heart-stage .heart-hint {
+        font-size: 13px;
+    }
+
+    .tile {
+        width: 84px;
+        height: 84px;
+        font-size: 12px;
+        padding: 9px;
+        border-radius: 18px;
+    }
+}
+
+@media (max-width: 540px) {
+    #popup-layer {
+        justify-content: flex-start;
+    }
+
+    .heart-stage {
+        padding: 2vh 3vw;
+        backdrop-filter: blur(8px) saturate(110%);
+    }
+
+    .heart-stage .heart-instruction {
+        font-size: 17px;
+        line-height: 1.35;
+    }
+
+    .heart-stage .heart-hint {
+        font-size: 12px;
+    }
+
+    .tile {
+        width: 70px;
+        height: 70px;
+        font-size: 11px;
+        padding: 7px;
+        border-radius: 16px;
+        box-shadow: 0 10px 24px rgba(57, 73, 160, 0.45), inset 0 0 14px rgba(255, 255, 255, 0.24);
+        mix-blend-mode: normal;
     }
 }
