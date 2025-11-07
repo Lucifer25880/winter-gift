@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const stage = document.createElement('div');
         stage.className = 'heart-stage';
         stage.innerHTML = `
-      <div class="heart-instruction">蓝紫色的祝福即将抵达，请稍候...</div>
+      <div class="heart-instruction">祝福即将抵达，请稍候...</div>
       <div class="heart-container"></div>
       <div class="heart-hint">提示：爱心完成后，轻触屏幕让祝福铺满整个冬夜</div>
     `;
