@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>神秘立冬礼物❄️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+    <div class="modal-backdrop" id="start-backdrop" aria-hidden="false">
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <div class="titlebar">
+                <span class="icon">❄️</span>
+                <span class="title" id="modal-title">立冬礼物</span>
+            </div>
+            <div class="content">您有一份立冬礼物，确定要打开吗？</div>
+            <div class="actions">
+                <button class="btn primary" id="confirm-btn" autofocus>确定</button>
+            </div>
+        </div>
+    </div>
+    <div id="popup-layer" aria-live="polite" aria-atomic="false"></div>
+</div>
+<audio id="bgMusic" preload="auto">
+    <source src="https://lf26-music-east.douyinstatic.com/obj/ies-music-hj/7569557069053856549.mp3" type="audio/mpeg">
+</audio>
+
+<script src="app.js"></script>
+<script src="1.js"></script>
+</body>
+</html>
