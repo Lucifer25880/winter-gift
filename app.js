@@ -184,8 +184,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const halfHeight = rect.height / 2;
         const scaleFactor = Math.min((rect.width * 0.9) / spanX, (rect.height * 0.9) / spanY);
 
-        const baseDelay = providedBaseDelay !== undefined ? providedBaseDelay : (animateFromScatter ? 240 : 20);
-        const stepDelay = providedStepDelay !== undefined ? providedStepDelay : (instant ? 0 : 45);
+        const baseDelay = providedBaseDelay !== undefined ? providedBaseDelay : (animateFromScatter ? 220 : 20);
+        const stepDelay = providedStepDelay !== undefined ? providedStepDelay : (instant ? 0 : 40);
 
         tiles.forEach((tile, index) => {
             const coord = points[index];
@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (instant) {
                 onComplete();
             } else {
-                const totalDelay = baseDelay + stepDelay * tiles.length + 800;
+                const totalDelay = baseDelay + stepDelay * tiles.length + 650;
                 setTimeout(onComplete, totalDelay);
             }
         }
@@ -325,44 +325,44 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (shortest <= 520) {
             return {
-                tileCount: 120,
-                baseDelay: 140,
-                stepDelay: 34,
-                widthRatio: 0.9,
-                heightRatio: 0.78,
-                minWidth: 320,
-                maxWidth: 640,
-                minHeight: 320,
-                maxHeight: 540,
+                tileCount: 90,
+                baseDelay: 110,
+                stepDelay: 26,
+                widthRatio: 0.86,
+                heightRatio: 0.76,
+                minWidth: 290,
+                maxWidth: 540,
+                minHeight: 290,
+                maxHeight: 500,
                 layoutDensity: 'compact'
             };
         }
 
         if (shortest <= 720) {
             return {
-                tileCount: 150,
-                baseDelay: 180,
-                stepDelay: 40,
-                widthRatio: 0.82,
-                heightRatio: 0.75,
-                minWidth: 360,
-                maxWidth: 680,
-                minHeight: 360,
-                maxHeight: 580,
+                tileCount: 120,
+                baseDelay: 140,
+                stepDelay: 30,
+                widthRatio: 0.78,
+                heightRatio: 0.72,
+                minWidth: 330,
+                maxWidth: 620,
+                minHeight: 330,
+                maxHeight: 550,
                 layoutDensity: 'balanced'
             };
         }
 
         return {
             tileCount: 171,
-            baseDelay: 220,
-            stepDelay: 45,
-            widthRatio: 0.75,
-            heightRatio: 0.7,
-            minWidth: 420,
-            maxWidth: 760,
-            minHeight: 420,
-            maxHeight: 640,
+            baseDelay: 170,
+            stepDelay: 32,
+            widthRatio: 0.7,
+            heightRatio: 0.66,
+            minWidth: 380,
+            maxWidth: 680,
+            minHeight: 380,
+            maxHeight: 580,
             layoutDensity: 'airy'
         };
     }
